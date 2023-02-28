@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+.container-login{
+    display: flex;
+    position: fixed;
+}
+.side-login{
+    margin: 0 0 0 140px;
+}
+.img{
+    width: 1000px;
+    height: 1024px;
+}
+
+.email[type="email"]{
+    width: 610px;
+    height: 79px;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+.password[type="password"]{
+    width: 610px;
+    height: 79px;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+.username[type="text"]{
+    width: 610px;
+    height: 79px;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+
+.title-welcome{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.title-robo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    margin-top: 24px;
+    color: #00337C;
+}
+
+.login-google{
+    display: inline-block;
+    width: 673px;
+    height: 94px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 44px;
+    border: none;
+}
+.login-facebook{
+    display: inline-block;
+    width: 673px;
+    height: 94px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 25px;
+    border: none;
+}
+
+.line-and-or{
+    display: flex;
+    margin-top: 46px;
+    margin-left: 1px;
+}
+.line1{
+    width: 296px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    position: relative;
+    left: 1px;
+}
+
+.line2{
+    position: relative;
+    width: 296px;
+    left: 50px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.or{
+    position: relative;
+    bottom: 12px;
+    left: 25px;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.check-and-forget{
+    display: flex;
+    margin-top: 33px;
+    position: relative;
+}
+
+.forget{
+    left: 370px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.65);
+
+}
+
+.btn-login{
+    width: 662px;
+    height: 79px;
+    color: white;
+    background: #00337C;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 67px;
+}
+
+.label-check{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.link-register{
+    text-decoration: none;
+}
+
+.link-to-register{
+    left: 240px;
+    position: relative;
+    margin-top: 28px;
+}
+
+.a-login-google{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 38px;
+    margin-left: 20px;
+
+}
+.a-login-facebook{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 38px;
+    margin-left: 50px;
+}
+
+
+.svg-fc{
+    position: relative;
+    left: 24px;
+}
+
+.label-form{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.username-top{
+    margin-top: 30px;
+}
+.email-top{
+    margin-top: 24px;
+}
+
+.password-top{
+    margin-top: 23px;
+}
+
+.username-icon{
+    width: 61px;
+}
+.pw-icon{
+    width: 61px;
+}
+.text-center{
+    left: -50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .img{
+      display: none;
+    }
+    .email[type="email"],
+    .password[type="password"],
+    .login-google,
+    .login-facebook,
+    .btn-login {
+      width: 100%;
+    }
+    .forget {
+      left: 328px;
+    }
+    .line-and-or{
+      width: 92%;
+    }
+    .text-center{
+        left: -1px;
+    }
+
+  }
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .container-login {
+      position: static;
+      margin-right: 0;
+      flex-direction: column;
+    }
+  
+    .side-login {
+      margin: 0;
+    }
+  
+    .img {
+      display: none;
+    }
+  
+    .email[type="email"],
+    .password[type="password"],
+    .login-google,
+    .login-facebook,
+    .btn-login {
+      width: 90%;
+    }
+  
+    .title-welcome,
+    .title-robo {
+      font-size: 36px;
+      margin-left: 20px;
+    }
+  
+    .line-and-or {
+      margin-top: 50px;
+    }
+  
+    .link-to-register {
+
+      margin-top: 15px;
+    }
+    .text-center{
+        left: -1px;
+    }
+  
+    .a-login-google,
+    .a-login-facebook {
+        top: 2px;
+        position: relative;
+      margin-left: 15px;
+    }
+  
+    .svg-fc {
+      left: 0;
+    }
+  
+    .email-top,
+    .password-top {
+      margin-top: 20px;
+    }
+
+    .line1,
+    .line2{
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    .line-and-or{
+        width: 85%;
+    }
+    .or{
+        margin-top: 12px;
+        left: 35px;
+    }
+    .input-group,
+    .check-and-forget,
+    .login-facebook,
+    .login-google{
+        margin-left: 20px;
+    }
+    .btn-login{
+        margin-left: 25px;
+    }
+    .check-and-forget{
+        justify-content: space-between;
+    }
+    .forget{
+        left: -20px;
+    }
+  }
